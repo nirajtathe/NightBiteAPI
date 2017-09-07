@@ -6,8 +6,9 @@ var foodModel = new mongoose.Schema({
     restaurant: {type:String},
     //0:Veg 
     //1: Non-veg
-    type: {type: Boolean , default:0},
-    amount: {type:Number}
+    type: {type: Boolean , default:false},
+    amount: {type:Number},
+    image: {type: String}
 });
 
 module.exports= mongoose.model('Food',foodModel);
